@@ -1,0 +1,18 @@
+SELECT * FROM livros;
+SELECT *FROM livros WHERE Autor='Autor A';
+SELECT *FROM livros WHERE AnoPublicacao = 2020; 
+SELECT *FROM livros WHERE Preco = 20.00;
+SELECT Autor,COUNT(*) AS Quantidade FROM livros GROUP BY Autor;
+SELECT *FROM livros ORDER BY AnoPublicacao DESC LIMIT 5;
+UPDATE Livros SET Preco = 25.99 WHERE ID = 1; 
+SELECT * FROM livros;
+UPDATE livros SET AnoPublicacao = 2002 WHERE id = 2;
+SELECT * FROM livros;
+DELETE FROM livros WHERE ID = 3;
+SELECT * FROM livros;
+DELETE FROM livros WHERE autor ='nao sei';
+SELECT * FROM livros;
+SELECT AVG (Preco) AS PrecoMedio FROM livros;
+SELECT * FROM livros WHERE Preco> (SELECT AVG(preco) FROM livros);
+UPDATE livros SET Preco = Preco * 1.10;
+SELECT * FROM livros;

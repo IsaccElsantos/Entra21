@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+</head>
+<body  style="font-family: Arial, Helvetica, sans-serif;"></style>>
+    <H1>Pagina web</H1 textarea><br>
+
+        <p style="border: 1px solid red;">teste de borda</p>
+
+<!--como usar div-->
+
+        <html>
+            <style>
+            div {
+              background-color: #FFF4A3;
+            }
+            </style>
+            <body>
+            
+            <h1>HTML DIV Example</h1>
+            
+            <div>
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 9 million inhabitants.</p>
+            </div><br>
+            <div>
+                <h2></h2>
+            </div>
+            <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 700,000 inhabitants.</p>
+              </div>
+              
+              <div style="background-color:#8bffe6;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has over 4 million inhabitants.</p>
+              </div>
+              
+              <p>CSS styles are added to make it easier to separate the divs, and to make them more pretty:)</p>
+            
+            <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+            
+            </body>
+            </html>
+
+
+            <!--div lado a lado usando o float-->
+
+            <html>
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+</style>
+<body>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 9 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 700,000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has over 4 million inhabitants.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!--div usando flex...-->
+<html>
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+  display: flex;
+}
+div.mycontainer div {
+  width:33%;  
+ 
+}
+</style>
+<body>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 9 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 700,000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#84e6ff;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has over 4 million inhabitants.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!--div para dividir como quiser as colunas usando o grid separar com todos os valores somando juntos 99%-->
+
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 30% 39%;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Example</h1>
+
+<p>Align three DIV elements side by side.</p>
+
+<div class="grid-container">
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 700,000 inhabitants.</p>
+</div>
+
+<div style="background-color:#8ff2ff;padding-top: 10px;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has over 4 million inhabitants.</p>
+</div>
+
+</div>
+
+</body>
+</html>
+<h1>Lorem, ipsum dolor sit a</h1>
+
+<p style="padding: 10px;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore.
+</p>
+
+<!--padding serve pra alinhar os paragrafos-->
+
+<p style="padding: 100px;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero beatae cum eveniet eligendi, hic odit? Facere aut magnam omnis quia quisquam! Iure nostrum minus dolores ut esse eligendi sint dolore.
+</p>
+
+</body>
+</html>

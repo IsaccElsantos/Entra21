@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <fieldset>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body style="background-color: rgb(188, 215, 255); margin: auto; width: 500px; height: 50px;">
+
+    <!--CRIA FORMULARIO PARA ESCREVER-->
+    <h1 style="font-family: Arial, Helvetica, sans-serif;"> Cadastro de usuario</h1>
+    <!--SELECIONAR MEHOD POST OU GET, GET APARECE DADSO NA URL, POST NAO-->
+    <form action="pagina2.html" method="post" enctype="multipart/form-data" style="font-family: Arial, Helvetica, sans-serif;">
+        <fieldset>
+        <legend>Novo usuario</legend>
+        <label for="nome">Nome</label> <!--palceholder para descrever na caixinha-->
+        <input type="text" name="nome" placeholder="informe seu nome">
+        <br>
+        <hr><br>
+        <!--CRIA FORMULARIO PARA NUMEROS-->
+        <label for="CPF"> CPF</label>
+        <input type="number" name="CPF" placeholder="informe seu CPF">
+        <br>
+        <hr><br>
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" placeholder="informe sua idade">
+        <br>
+        <hr><br>
+    </fieldset>
+        <!--CRIA FORMULARIO DE DESCRIÇAO-->
+        <label for="descricao">Descrição do pedido</label>
+        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="descreva o seu pedido">
+</textarea>
+        <br>
+        <hr><br>
+        <!--CRIA FORMULARIO DE SELECIONAR-->
+        <label for="estado">Estado</label>
+        <select name="estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SC">Santa Catarina</option>
+        </select>
+        <br>
+        <hr><br>
+        <!--CRIA FORMULARIO DE ESCOLHA-->
+        <label for="genero">Genero</label><br>
+        <label for="m">Masculino</label>
+        <input type="radio" name="genero" value="m">
+        <label for="f">Feminino</label>
+        <input type="radio" name="genero" value="f">
+        <br>
+        <hr><br>
+        <!--cria formulario de multipla selecao-->
+        <label for="interesses">Interesses</label><br>
+        <label for="esporte">Esportes</label>
+        <input type="checkbox" name="interesses[]" value="esporte" id="interesses"><br>
+        <label for="musica">Musicas</label>
+        <input type="checkbox" name="interesses[]" value="musica" id="interesses"><br>
+        <label for="cozinhar">Cozinhar</label>
+        <input type="checkbox" name="interesses[]" value="cozinhar" id="interesses"><br>
+        <label for="ler">Ler</label>
+        <input type="checkbox" name="interesses[]" value="ler" id="interesses"><br>
+        <br>
+        <hr><br>
+        <!--Seleciona data de nascimento-->
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" name="nascimento"><br>
+        <hr><br>
+        <label for="horario">Horario de conclusão do formulario</label>
+        <input type="time" name="horario">
+        <br>
+        <hr><br>
+        <!--input para enviar documentos-->
+        <label for="documentos">Enviar documento</label>
+        <input type="file" name="documentos" id="documento" accept=".pdf,.txt.,.png">
+        <br>
+        <hr><br>
+        <!--botoes-->
+        <!--reset-->
+        <label for="reset">Limpar formularios</label>
+        <button type="reset">Limpar formulario</button><br><br>
+        <!--enviar formulario  selecionar mehod post ou get la em form action-->
+        <button type="submit">Enviar</button>
+        <br>
+        <hr><br> 
+    </fieldset>
+        
+        
+
+
+
+
+    </form>
+</body>
+
+</html>
