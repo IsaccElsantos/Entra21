@@ -1,0 +1,40 @@
+package projetoum;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args) {
+		//declaraçao de variaveis
+		String nomePessoas;
+		int idadePessoas;
+		float horasTrabalhadas, valorHora = 25.0f;
+		double salarioTotal;
+		boolean demitido = false;
+		/*entrada de dados
+		 * ultilizando scanner pela primeira vez
+		 */
+		Scanner sc = new Scanner(System.in);
+		//mostra a expressao e pula para a linha de baixo
+		System.out.println("Infrme o seu nome");
+		nomePessoas = sc.next();
+		System.out.println("O nome que voce informou é : "+nomePessoas);
+		
+		
+		//mostra a expressao e pula para a linha de baixo
+		System.out.println("Informe a sua idade");
+		idadePessoas = sc.nextInt();
+		System.out.println("A idade que voce informou é : "+idadePessoas);
+		System.out.println("Nome... " + nomePessoas);
+		System.out.println("Idade... " + idadePessoas);
+		System.out.println("Informe horas trabalhadas.: ");
+		horasTrabalhadas = sc.nextFloat();
+		System.out.println("Hrs/ Trabalhadas " + horasTrabalhadas);
+		System.out.println("Seu salario total é: R$" + horasTrabalhadas * valorHora);
+		
+		
+		
+	}
+
+}
+

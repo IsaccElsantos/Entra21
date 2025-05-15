@@ -1,0 +1,22 @@
+package exercicios_modulo3ex2;
+
+import java.util.Scanner;
+
+public class exercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a sua idade: ");
+        int idade = scanner.nextInt();
+
+        if (idade > 65) {
+            System.out.println("A pessoa é idosa.");
+        } else if (idade > 16) {
+            System.out.println("Voce deve votar.");
+        } else {
+            System.out.println("Voce nao esta elegivel a votar.");
+        }
+
+        scanner.close();
+    }
+}

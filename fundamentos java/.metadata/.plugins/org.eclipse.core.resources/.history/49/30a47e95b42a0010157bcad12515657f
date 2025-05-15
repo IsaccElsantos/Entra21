@@ -1,0 +1,28 @@
+package projetoum;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args) {
+		//declaraçao de variaveis
+		String nomePessoas;
+		int idadePessoas;
+		float horasTrabalhos, valorHora = 25.0f;
+		double salarioTotal;
+		boolean demitido = false;
+		/*entrada de dados
+		 * ultilizando scanner pela primeira vez
+		 */
+		Scanner sc = new Scanner(System.in);
+		//mostra a expressao e pula para a linha de baixo
+		System.out.println("Infrme o seu nome");
+		nomePessoas = sc.nextLine();
+		System.out.println("O nome que voce informou é : "+nomePessoas);
+		
+		
+		
+	}
+
+}
+

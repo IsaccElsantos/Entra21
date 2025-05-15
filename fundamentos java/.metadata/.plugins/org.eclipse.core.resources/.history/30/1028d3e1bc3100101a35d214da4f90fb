@@ -1,0 +1,42 @@
+package exercicios_modulo3ex2;
+
+import java.util.Scanner;
+
+public class exercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada de dados
+        System.out.print("Informe seu peso em kg: ");
+        double peso = scanner.nextDouble();
+
+        System.out.print("Informe sua altura em metros: ");
+        double altura = scanner.nextDouble();
+
+        // Cálculo do IMC
+        double imc = peso / (altura * altura);
+
+        // Exibição do resultado e grupo
+        System.out.printf("Seu IMC é: %.2f\n", imc);
+
+        if (imc < 0) {
+            System.out.println("Grupo: Muito abaixo do peso");
+        } else if (imc <= 16.9) {
+            System.out.println("Grupo: Muito abaixo do peso");
+        } else if (imc <= 18.4) {
+            System.out.println("Grupo: Abaixo do peso");
+        } else if (imc <= 24.9) {
+            System.out.println("Grupo: Peso normal");
+        } else if (imc <= 29.9) {
+            System.out.println("Grupo: Acima do peso");
+        } else if (imc <= 34.9) {
+            System.out.println("Grupo: Obesidade grau I");
+        } else if (imc <= 40.0) {
+            System.out.println("Grupo: Obesidade grau II");
+        } else {
+            System.out.println("Grupo: Obesidade grau III");
+        }
+
+        scanner.close();
+    }
+}

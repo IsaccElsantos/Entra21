@@ -1,0 +1,17 @@
+package projetoum;
+
+public class principal {
+
+	public static void main(String[] args) {
+		
+		String nomepessoas;
+		int idadepessoas;
+		float horasTrabalhos;
+		double salarioTotal;
+		
+		
+		
+	}
+
+}
+
